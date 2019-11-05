@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Nike Air Force 1 Shadow",
+    "description": "Men's Basketball Shoes",
+	"price": "$140",
+	"full-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 2,
+    "name": "Nike Air Force 1 Shadow",
+    "description": "Men's Basketball Shoes",
+	"price": "$140",
+	"full-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 3,
+    "name": "Nike Air Force 1 Shadow",
+    "description": "Men's Basketball Shoes",
+	"price": "$140",
+	"full-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 4,
+    "name": "Nike Air Force 1 Shadow",
+    "description": "Men's Basketball Shoes",
+	"price": "$140",
+	"full-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  }
+  ]

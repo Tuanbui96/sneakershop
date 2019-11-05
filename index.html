@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="vendors/css/slick.css">
+  <link rel="stylesheet" href="vendors/css/slick-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <script src="vendors/js/jquery-3.4.0.js"></script>
+  <script src="vendors/js/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <title>ThrowSneaks</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__logo-box">
+        <img src="resources/img/logo.png" alt="" class="header__logo-image">
+      </div>
+
+      <div class="navbar__trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar__button">
+          <li class="navbar__list"><i class="fa fa-search" aria-hidden="true"></i></li>
+          <li class="navbar__list"><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+        </ul>
+      </nav>
+      <nav class="navbar navbar--responsive">
+        <ul class="navbar__main">
+          <li class="navbar__list"><a class="navbar__link" href="#">BOY</a></li>
+          <li class="navbar__list"><a class="navbar__link" href="#">MEN</a></li>
+          <li class="navbar__list"><a class="navbar__link" href="#">WOMEN</a></li>
+          <li class="navbar__list"><a class="navbar__link" href="#">GIRL</a></li>
+        </ul>
+      </nav>
+      <div class="btn-social-box">
+        <a class="btn-social" href="#"><i class="fab fa-facebook-f btn-social--text"></i></a>
+        <a class="btn-social" href="#"><i class="fab fa-instagram btn-social--text"></i></a>
+        <a class="btn-social" href="#"><i class="fab fa-twitter btn-social--text"></i></a>
+      </div>
+    </div><!-- End Wrapper -->
+    <!-- <div class="hero-slider">
+      <div class="position">
+          <section class="hero-product">
+            <h1 class="hero__name--main">Lefron Xiii 25k</h1>
+            <h3 class="hero__name--sub">
+              <span class="hero__name--sub-1">Started From</span>
+              <span class="hero__name--sub-2">728$</span>
+            </h3>
+            <a href="#" class="btn btn-light mr-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
+            <a href="#" class="btn btn-outline-light">learn more</a>
+            <div  class="hero__image">
+              <img src="resources/img/prd-lefronXIII.png" alt="" class="hero-img">
+            </div>
+          </section>
+        </div>
+    </div> -->
+    <div class="slider slider--header" id="product-slider">
+      <div class="item item-first">
+        <div class="hero__bg hero__bg--bg-first">
+          <!-- <img src="resources/img/header-background.png" alt="" class="hero__bg-image"> -->
+        </div>
+        <div class="hero-slider">
+          <div class="hero-product">
+            <h1 class="hero-product__name-main hero-product__name-main--first">Lefron Xiii 25k</h1>
+            <h3 class="hero-product__name-sub">
+              <span class="hero-product__name-sub--sub-first">Started From</span>
+              <span class="hero-product__name-sub--sub-second">728$</span>
+            </h3>
+            <a href="#" class="btn btn-light mr-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
+            <a href="#" class="btn btn-outline-light">learn more</a>
+          </div>
+          <div  class="hero-product__image-box">
+            <img src="resources/img/prd-lefronXIII.png" alt="" class="hero-product__image">
+          </div>
+        </div>
+      </div>
+      <div class="item item-second">
+        <div class="hero__bg hero__bg--bg-second">
+          <!-- <img src="resources/img/running-bg.jpg" alt="" class="hero__bg-image"> -->
+        </div>
+        <div class="hero-slider">
+          <div class="hero-product">
+            <h1 class="hero-product__name-main hero-product__name-main--second">Air Max Running</h1>
+            <h3 class="hero-product__name-sub">
+              <span class="hero-product__name-sub--sub-1">Started From</span>
+              <span class="hero-product__name-sub--sub-2">150$</span>
+            </h3>
+            <a href="#" class="btn btn-light mr-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
+            <a href="#" class="btn btn-outline-light">learn more</a>
+          </div>
+          <div  class="hero-product__image-box">
+            <img src="resources/img/Nike-Air-Max-Running.png" alt="" class="hero-product__image">
+          </div>
+        </div>
+      </div>
+      <div class="item item-third">
+        <div class="hero__bg hero__bg--bg-third">
+          <!-- <img src="resources/img/women-model-street-bg.jpg" alt="" class="hero__bg-image"> -->
+        </div>
+        <div class="hero-slider">
+          <div class="hero-product">
+            <h1 class="hero-product__name-main hero-product__name-main--third">Air Max Sneakers</h1>
+            <h3 class="hero-product__name-sub">
+              <span class="hero-product__name-sub--sub-1">Started From</span>
+              <span class="hero-product__name-sub--sub-2">225$</span>
+            </h3>
+            <a href="#" class="btn btn-light mr-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
+            <a href="#" class="btn btn-outline-light">learn more</a>
+          </div>
+          <div  class="hero-product__image-box">
+            <img src="resources/img/Nike-Air-Max-Sneakers.png" alt="" class="hero-product__image">
+          </div>
+        </div>
+      </div>
+      <div class="item item-four">
+        <div class="hero__bg hero__bg--bg-four">
+          <!-- <img src="resources/img/lebron-16-low-hyper-jade-bg.jpg" alt="" class="hero__bg-image"> -->
+        </div>
+        <div class="hero-slider">
+          <div class="hero-product">
+            <h1 class="hero-product__name-main hero-product__name-main--four">LeBron XVI Low Hyper Jade</h1>
+            <h3 class="hero-product__name-sub">
+              <span class="hero-product__name-sub--sub-1">Started From</span>
+              <span class="hero-product__name-sub--sub-2">160$</span>
+            </h3>
+            <a href="#" class="btn btn-light mr-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
+            <a href="#" class="btn btn-outline-light">learn more</a>
+          </div>
+          <div  class="hero-product__image-box">
+            <img src="resources/img/Nike-lebron-16-low.png" alt="" class="hero-product__image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="feature-product">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="feature-product__image-box">
+            <img src="resources/img/feature-product.png" alt="" class="feature-product__image">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="feature-product__text-box">
+            <img src="resources/img/waves.png" alt="" class="feature-product__waves">
+            <h3 class="heading-tertiary u-margin-left-3">niki: winter collection 2015</h3>
+            <p class="paragraph u-margin-top-5">
+              Nike gave us exclusive access to the upcoming 2015 fall/winter collection of its Sneakerboots collection recently, on a both unfortunate-yet-fitting gloomy fall afternoon. The event, held in Moscow, Russia, brought upon influencers and celebrities such as Russian rapper L’One, street artist Dmitri Aske, Dynamo Moscow football star Alexandr Kokorin and Kate Shilonosova from punk band Glintshake.
+            </p>
+            <a href="#" class="btn btn-dark">Shop now</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="product" id="product">
+    <div class="container">
+      <h3 class="heading-tertiary heading-tertiary--center">Shoes & Sneakers</h3>
+      <div class="row">
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-full">
+      <div class="modal-content modal-content--modifier" id="products_modal">
+
+      </div>
+    </div>
+  </div>
+
+  <section class="divisions">
+    <div class="container">
+      <div class="row u-padding-small">
+        <div class="col-lg-4 u-format-mp">
+          <div class="divisions__box">
+            <img class="divisions__image" src="resources/img/divisions/football.jpg" alt="Foot ball">
+            <div class="divisions__text-box divisions__text-box--first">
+              <div class="divisions__icon"><i class="fas fa-futbol"></i></div>
+              <div class="divisions__title">Football</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 u-format-mp">
+          <div class="divisions__box">
+            <img class="divisions__image" src="resources/img/divisions/basketball.jpg" alt="Foot ball">
+            <div class="divisions__text-box divisions__text-box--second">
+              <div class="divisions__icon"><i class="fas fa-basketball-ball"></i></div>
+              <div class="divisions__title">Basketball</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 u-format-mp">
+          <div class="divisions__box">
+            <img class="divisions__image" src="resources/img/divisions/soccer.jpg" alt="Foot ball">
+            <div class="divisions__text-box divisions__text-box--third">
+              <div class="divisions__icon"><i class="far fa-futbol"></i></div>
+              <div class="divisions__title">Soccer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 u-format-mp">
+          <div class="divisions__box">
+            <img class="divisions__image" src="resources/img/divisions/running.jpg" alt="Foot ball">
+            <div class="divisions__text-box divisions__text-box--four">
+              <div class="divisions__icon"><i class="fas fa-running"></i></div>
+              <div class="divisions__title">Running</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 u-format-mp">
+          <div class="divisions__box">
+            <img class="divisions__image" src="resources/img/divisions/lifestyle.jpg" alt="Foot ball">
+            <div class="divisions__text-box divisions__text-box--five">
+              <div class="divisions__icon"><i class="fas fa-grin-stars"></i></i></div>
+              <div class="divisions__title">Lifestyle</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 u-format-mp">
+          <div class="divisions__box">
+            <img class="divisions__image" src="resources/img/divisions/gym.jpg" alt="Foot ball">
+            <div class="divisions__text-box divisions__text-box--six">
+              <div class="divisions__icon"><i class="fas fa-dumbbell"></i></div>
+              <div class="divisions__title">gym</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-product">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="feature-product__text-box">
+            <img src="resources/img/waves.png" alt="" class="feature-product__waves">
+            <h3 class="heading-tertiary u-margin-left-3">nike magic limited</h3>
+            <p class="paragraph u-margin-top-5">
+              Nike CEO Mark Parker announces the launch of the limited-edition Mag. Complete with individually responsive "power laces",  imagined nearly 30 years ago, this technology is destined to alter the course of sport.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+            </p>
+            <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
+          </div>
+
+        </div>
+        <div class="col-lg-7">
+          <div class="feature-product__image-box">
+            <img src="resources/img/product/nike-mag.png" alt="" class="feature-product__image">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="introdution-post">
+    <div class="container">
+      <div class="row u-padding-small">
+        <div class="col-lg-6 u-format-mp">
+          <div class="introduction-post__post-box">
+            <img src="resources\img\production\pro1.png" alt="" class="introduction-post__image">
+            <div class="introdution-post__text-box">
+              <a class="heading-tertiary heading-tertiary--white" href="#">fight like a spider</a>
+              <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#" class="btn-read-more">Read more</a>
+              <h5 class="introduction-post__date"><i class="far fa-clock"></i>&nbsp;&nbsp;22/02/1992</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 u-format-mp">
+          <div class="introduction-post__post-box">
+            <img src="resources\img\production\pro2.png" alt="" class="introduction-post__image">
+            <div class="introdution-post__text-box">
+              <a class="heading-tertiary heading-tertiary--white" href="#">Run like a cheetah</a>
+              <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#" class="btn-read-more">Read more</a>
+              <h5 class="introduction-post__date"><i class="far fa-clock"></i>&nbsp;&nbsp;22/02/1992</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="footer__subscribe-box">
+            <h4 class="heading-tertiary heading-tertiary-small">subscribe and get the latest news</h4>
+            <div class="form-box">
+              <input class="txt-email" type="email" placeholder="Email">
+              <button class="btn-arrow" type="button" name="button">&rarr;</button>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+          <h4 class="heading-tertiary">throwkicks</h4>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer__btn-box">
+            <a href="#" class="btn-social"><img src="resources/img/social/facebook.png" alt=""></a>
+            <a href="#" class="btn-social"><img src="resources/img/social/instagram.png" alt=""></a>
+            <a href="#" class="btn-social"><img src="resources/img/social/twister.png" alt=""></a>
+            <a href="#" class="btn-social"><img src="resources/img/social/youtube.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+      $("#product-slider").slick({
+        dots: true,
+        arrows: true,
+        autoplay: false,
+        autoplaySpeed: 5000
+      });
+</script>
+
+<script src="resources/js/products.js"></script>
+<script src="resources/js/menu_trigger.js">
+
+</script>
+</body>
+</html>
