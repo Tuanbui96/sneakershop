@@ -227,6 +227,12 @@ body{
   color: white;
   z-index: 3;
 }
+.navbar__button .navbar__list{
+  transition: all .5s;
+}
+.navbar__button .navbar__list:hover{
+  transform: scale(1.2);
+}
 
 .navbar__list{
   padding: 0 2rem;
@@ -323,13 +329,19 @@ body{
 }
 
 .btn{
-  width: 12rem;
+  width: 13rem;
   height: 4rem;
   line-height: 3rem;
   font-size: 1.4rem;
   text-transform: uppercase;
+  border-radius: 2rem;
 }
 
+.btn--big{
+  width: 20rem;
+
+
+}
 .btn-social-box{
   position: absolute;
   font-size: 2rem;
@@ -513,13 +525,29 @@ body{
   margin-right: 1.5rem;
 }
 
+.modal__logo{
+  top: 2rem;
+  left: 2rem;
+  fill: yellow;
+  position: absolute;
+}
+
+.modal__bg-text{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-size: 12rem;
+  text-transform: uppercase;
+  opacity: .3;
+}
+
 .modal__image-box{
-  top: 50%;
-  left: 10%;
-  transform: translate(-10%, -50%) rotate(30deg);
+  /* top: 50%;
+  left: 10%; */
+  transform:rotate(30deg);
   /* height: 35rem; */
   width: 40rem;
-  position: absolute;
+  /* position: absolute; */
   z-index: 1;
 }
 
@@ -529,19 +557,23 @@ body{
 }
 
 .modal--left{
-  width: 62%;
+  width: 65%;
   height: 100%;
-  background-image: linear-gradient(to top, #273142, #364254);
+  background-image: radial-gradient( #394777, #202F4C);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .modal--right{
   display: flex;
-  width: 38%;
+  width: 35%;
   padding-top: 5rem;
   /* align-items: center; */
   justify-content: center;
   height: 100%;
-  background-image: linear-gradient(to right, #cdcdcd, white);
+  text-align: center !important;
 }
 
 .modal__body{
@@ -755,6 +787,12 @@ body{
 .u-margin-left-3{
   margin-left: 3rem;
 }
+
+.u-align-center{
+  align-items: center;
+  text-align: center;
+}
+
 /*-------------------------------------------------*/
 /*-------------------------------------------------*/
 /*--------------responsive-------------------------*/
@@ -875,6 +913,16 @@ body{
   font-size: 1.3rem;
 }
 
+.feature-product__text-box {
+    text-align: center;
+}
+.feature-product__waves{
+  display: none;
+}
+
+.u-margin-left-3{
+  margin: 0;
+}
 /*-------------------modal product responsive----------------------------*/
   /* .modal-full{
     min-width: 100%;
@@ -891,18 +939,16 @@ body{
   .modal-content--modifier{
     border-radius: 1rem;
     flex-direction: column;
+    height: 60rem;
   }
 
   .modal-content--modifier .close{
     color: white;
   }
   .modal__image-box {
-    top: 2rem;
-    left: 50%;
-    transform: translateX( -50%);
+    transform: rotate(0deg);
     width: 70%;
     height: auto;
-    position: absolute;
     z-index: 1;
   }
 

@@ -88,25 +88,24 @@ function product_detail(get_id) {
     let render = render_id[i];
 
     html+= '  <button type="button" class="close" data-dismiss="modal">&times;</button>'
-    html+= '  <div class="modal__image-box">'
-    html+= '    <img class="modal__image" src="'+render.image_modal+'" alt="">'
-    html+= '  </div>'
-  
-    html+= '    <div class="modal--left"></div>'
-  
-  
+    html+= '    <div class="modal--left">'
+    html+= '      <img width="10%" class="modal__logo" src="resources/img/Nike-logo.svg">'
+    html+= '      <div class="modal__image-box">'
+    html+= '        <img class="modal__image" src="'+render.image_modal+'" alt="">'
+    html+= '      </div>'
+    html+= '      <div class="modal__bg-text"></div>'
+    html+= '    </div>'
     html+= '    <div class="modal--right">'
-    html+= '      <div class="modal__body">'
+    html+= '      <div class="modal__body text-center">'
     html+= '        <h3 class="product__name product__name--big">'+render.name+'</h3>'
     html+= '        <h4 class="product__description">'+render.description+'</h4>'
     html+= '        <h3 class="product__price">'+render.price+'</h3>'
     html+= '        <p class="paragraph">'+render.full_description+'</p>'
-    html+= '        <button class="btn btn-primary mr-3"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;ADD TO CART</button>'
-    html+= '        <button class="btn btn-warning"><i class="far fa-star"></i>&nbsp;&nbsp;ADD TO FAVORITE</button>'
+    html+= '        <button class="btn btn-danger btn--big mt-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;ADD TO CART</button>'
     html+= '      </div>'
 
     html+= '    </div>'
-    
+
 
 }
 
