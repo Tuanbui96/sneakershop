@@ -226,6 +226,7 @@ body{
   list-style: none;
   color: white;
   z-index: 3;
+  cursor: pointer;
 }
 .navbar__button .navbar__list{
   transition: all .5s;
@@ -328,7 +329,7 @@ body{
   transform: translateY(50%) rotate(-45deg);
 }
 
-.btn{
+.btn--modifier{
   width: 13rem;
   height: 4rem;
   line-height: 3rem;
@@ -506,8 +507,8 @@ body{
   font-size: 3rem;
 }
 
-/*------------------modal css------------------*/
-.modal-content--modifier{
+/*------------------modal products css------------------*/
+.modal-content--products{
   display: flex;
   height: 50rem;
   flex-direction: row;
@@ -517,12 +518,12 @@ body{
   border-radius: 2rem;
 }
 
-.modal-content--modifier .close{
+.modal-content--products .close, .modal-content--carts .close{
   position: absolute;
   z-index: 5;
   font-size: 3rem;
-  right: 0;
-  margin-right: 1.5rem;
+  top: .5rem;
+  right: 1.5rem;
 }
 
 .modal__logo{
@@ -542,12 +543,8 @@ body{
 }
 
 .modal__image-box{
-  /* top: 50%;
-  left: 10%; */
   transform:rotate(30deg);
-  /* height: 35rem; */
   width: 40rem;
-  /* position: absolute; */
   z-index: 1;
 }
 
@@ -579,6 +576,116 @@ body{
 .modal__body{
   padding: 0 2rem;
 }
+
+/*-------------------------------modal carts css-------------------------*/
+.modal-content--carts{
+  display: flex;
+  height: 50rem;
+  position: relative;
+  border: none;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.modal-content--carts .text-align{
+  text-align: right;
+}
+
+.modal__carts-header{
+  margin-top: 2rem;
+  padding: 0 2rem;
+  width: 20rem;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 3rem;
+  background-color: #394777;
+  color: white;
+  clip-path: polygon(0 0, 100% 0%, 82% 99%, 0% 100%);
+}
+.modal__carts-list{
+  width: 100%;
+  padding: 0 2rem;
+  height: 50%;
+  margin: 3rem 0;
+  font-size: 2rem;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+.modal__sub-total{
+display: block;
+margin-right: 10rem;
+font-size: 2.5rem;
+text-align: right;
+}
+
+
+.carts-list__item {
+    display: flex;
+    height: 12rem;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.carts-list__image-box{
+  width: 10rem;
+  height: 6rem;
+}
+
+.carts-list__image{
+  width: 100%;
+  height: 100%;
+}
+
+ .carts-list__products{
+   width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.carts-list__products-name{
+  width: 55%;
+}
+
+.carts-list__products-price{
+  width: 25%;
+}
+
+.carts-list__products-amount{
+  width: 15%;
+}
+
+.carts-list__products-delete{
+  width: 5%;
+  opacity: .3;
+}
+
+.carts-list__products-name--main{
+  font-size: 2rem;
+}
+.carts-list__products-name--sub{
+  font-size: 1.6rem;
+  color: #555;
+  opacity: .5;
+}
+.btn--cart-pay{
+  color: white;
+  background-color: #394777;
+  margin: 2rem 7rem 2rem 0;
+  width: 18rem;
+}
+
+.btn--transparent{
+  background-color: transparent;
+}
+
+.input--transparent{
+  border: none;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 /*----------------------------------------------*/
 .product__item:hover{
   box-shadow: 0 0 .2rem #264348;
@@ -793,6 +900,32 @@ body{
   text-align: center;
 }
 
+::-webkit-scrollbar {
+      width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+      background-color: transparent;
+} /* the new scrollbar will have a flat appearance with the set background color */
+
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0,0,0,.3);
+      border-radius: .5rem;
+} /* this will style the thumb, ignoring the track */
+
+
+::-webkit-scrollbar-button {
+      background-color: transparent;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+.table td, .table th {
+    border: none !important;
+    vertical-align: middle !important;
+}
 /*-------------------------------------------------*/
 /*-------------------------------------------------*/
 /*--------------responsive-------------------------*/
@@ -936,13 +1069,17 @@ body{
       padding: 0;
   } */
 
-  .modal-content--modifier{
+  .modal-content--products{
     border-radius: 1rem;
     flex-direction: column;
     height: 60rem;
   }
 
-  .modal-content--modifier .close{
+  .modal-content--cart{
+    height: 50rem;
+  }
+
+  .modal-content--products .close{
     color: white;
   }
   .modal__image-box {
@@ -979,4 +1116,46 @@ body{
   .footer__btn-box{
     text-align: center;
   }
+
+  /*----------------------MODAL CART------------------------*/
+  .carts-list__products{
+    position: relative;
+  }
+  .carts-list__products{
+    width: 90%;
+    height: 100%;
+  flex-direction: column;
+ }
+
+ .carts-list__products-name{
+   width: 100%;
+ }
+
+ .carts-list__products-price{
+   width: 100%;
+ }
+
+ .carts-list__products-amount{
+   width: 40%;
+ }
+
+ .carts-list__products-delete{
+   width: 5%;
+   opacity: .3;
+   position: absolute;
+   right: 0;
+ }
+
+ .modal__sub-total{
+   text-align: center;
+   margin-right: 0;
+ }
+
+ .modal-content--carts .text-align{
+   text-align: center;
+ }
+
+ .btn--cart-pay{
+   margin: 2rem 0;
+ }
 }

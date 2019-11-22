@@ -31,7 +31,7 @@
       <nav class="navbar">
         <ul class="navbar__button">
           <li class="navbar__list"><i class="fa fa-search" aria-hidden="true"></i></li>
-          <li class="navbar__list"><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+          <li class="navbar__list"><i class="fa fa-shopping-cart" aria-hidden="true" data-toggle="modal" data-target="#carts-modal"></i></li>
         </ul>
       </nav>
       <nav class="navbar navbar--responsive">
@@ -76,8 +76,8 @@
               <span class="hero-product__name-sub--sub-first">Started From</span>
               <span class="hero-product__name-sub--sub-second">728$</span>
             </h3>
-            <a href="#" class="btn btn-light mr-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
-            <a href="#" class="btn btn-outline-light">learn more</a>
+            <a href="#" class="btn btn--modifier btn-light mr-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
+            <a href="#" class="btn btn--modifier btn-outline-light">learn more</a>
           </div>
           <div  class="hero-product__image-box">
             <img src="resources/img/prd-lefronXIII.png" alt="" class="hero-product__image">
@@ -95,8 +95,8 @@
               <span class="hero-product__name-sub--sub-1">Started From</span>
               <span class="hero-product__name-sub--sub-2">150$</span>
             </h3>
-            <a href="#" class="btn btn-light mr-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
-            <a href="#" class="btn btn-outline-light">learn more</a>
+            <a href="#" class="btn btn--modifier btn-light mr-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
+            <a href="#" class="btn btn--modifier btn-outline-light">learn more</a>
           </div>
           <div  class="hero-product__image-box">
             <img src="resources/img/Nike-Air-Max-Running.png" alt="" class="hero-product__image">
@@ -114,8 +114,8 @@
               <span class="hero-product__name-sub--sub-1">Started From</span>
               <span class="hero-product__name-sub--sub-2">225$</span>
             </h3>
-            <a href="#" class="btn btn-light mr-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
-            <a href="#" class="btn btn-outline-light">learn more</a>
+            <a href="#" class="btn btn--modifier btn-light mr-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
+            <a href="#" class="btn btn--modifier btn-outline-light">learn more</a>
           </div>
           <div  class="hero-product__image-box">
             <img src="resources/img/Nike-Air-Max-Sneakers.png" alt="" class="hero-product__image">
@@ -133,8 +133,8 @@
               <span class="hero-product__name-sub--sub-1">Started From</span>
               <span class="hero-product__name-sub--sub-2">160$</span>
             </h3>
-            <a href="#" class="btn btn-light mr-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
-            <a href="#" class="btn btn-outline-light">learn more</a>
+            <a href="#" class="btn btn--modifier btn-light mr-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
+            <a href="#" class="btn btn--modifier btn-outline-light">learn more</a>
           </div>
           <div  class="hero-product__image-box">
             <img src="resources/img/Nike-lebron-16-low.png" alt="" class="hero-product__image">
@@ -159,7 +159,7 @@
             <p class="paragraph u-margin-top-5">
               Nike gave us exclusive access to the upcoming 2015 fall/winter collection of its Sneakerboots collection recently, on a both unfortunate-yet-fitting gloomy fall afternoon. The event, held in Moscow, Russia, brought upon influencers and celebrities such as Russian rapper L’One, street artist Dmitri Aske, Dynamo Moscow football star Alexandr Kokorin and Kate Shilonosova from punk band Glintshake.
             </p>
-            <a href="#" class="btn btn-dark">Shop now</a>
+            <a href="#" class="btn btn--modifier btn-dark">Shop now</a>
           </div>
 
         </div>
@@ -178,8 +178,53 @@
 
   <div class="modal fade" id="myModal">
     <div class="modal-dialog modal-lg modal-dialog-centered modal-full">
-      <div class="modal-content modal-content--modifier" id="products_modal">
+      <div class="modal-content modal-content--products" id="products_modal">
+      </div>
+    </div>
+  </div>
 
+  <div class="modal fade" id="carts-modal">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-full">
+      <div class="modal-content modal-content--carts">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="modal__carts-header">Your Cart</div>
+        <div class="modal__carts-list" id="carts-products">
+                <div class="carts-list__item">
+                  <div class="carts-list__image-box">
+                      <img src="resources/img/product/nike-airforce-modal.png" alt="" class="carts-list__image">
+                    </div>
+                  <div class="carts-list__products">
+                    <div class="carts-list__products-name">
+                        <div class="carts-list__products-name--main">Nike Air Force 1 Shadow</div>
+                        <div class="carts-list__products-name--sub">Men's Basketball Shoes</div>
+                      </div>
+                    <div class="carts-list__products-amount">
+                      <div class="input-group">
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn--transparent minus-btn" data-type="minus" data-field="quant[1]">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </span>
+                        <input type="text" id="amount-input" class="form-control input--transparent" value="1" min="1">
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn--transparent plus-btn" data-type="plus" data-field="quant[1]">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="carts-list__products-price">140$</div>
+                    <div class="carts-list__products-delete">
+                      <i class="fas fa-times"></i>
+                    </div>
+                  </div>
+                </div>
+
+        </div> <!-- End modal__carts-list -->
+        <div class="modal__sub-total">Total: 100.00$</div>
+        <div class="text-align">
+          <button class="btn btn--modifier btn--cart-pay">Pay Now</button>
+        </div>
       </div>
     </div>
   </div>
@@ -262,7 +307,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
             </p>
-            <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
+            <a href="#" class="btn btn--modifier btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy now</a>
           </div>
 
         </div>
@@ -342,10 +387,9 @@
         autoplaySpeed: 5000
       });
 </script>
-
 <script src="resources/js/products.js"></script>
-<script src="resources/js/menu_trigger.js">
+<script src="resources/js/menu_trigger.js"></script>
+<script src="resources/js/amount.js"></script>
 
-</script>
 </body>
 </html>
