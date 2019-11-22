@@ -153,7 +153,7 @@
         html+= '              <i class="fa fa-minus"></i>'
         html+= '          </button>'
         html+= '      </span>'
-        html+= '      <input type="number" id="amount-input" class="form-control input--transparent" value="1" min="1">'
+        html+= '      <input type="text" id="amount-input" class="form-control input--transparent" value="1" min="1">'
         html+= '      <span class="input-group-append">'
         html+= '          <button type="button" class="btn btn--transparent plus-btn" data-type="plus" data-field="quant[1]">'
         html+= '              <i class="fa fa-plus"></i>'
