@@ -104,7 +104,7 @@
       html+= '        <h4 class="product__description">'+render.description+'</h4>'
       html+= '        <h3 class="product__price">$'+render.price+'</h3>'
       html+= '        <p class="paragraph">'+render.full_description+'</p>'
-      html+= '        <button class="btn btn-danger btn--big mt-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;ADD TO CART</button>'
+      html+= '        <button class="btn btn--modifier btn-danger btn--big mt-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;ADD TO CART</button>'
       html+= '      </div>'
       html+= '    </div>'
 
