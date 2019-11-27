@@ -42,7 +42,7 @@
       html+= '<div class="col-lg-4 col-6">'
       html+= '  <div class="product__item">'
       html+= '    <div class="product__button-box">'
-      html+= '      <a onclick="product_carts('+render.id+')" class="product__button product__button--add-to-cart">'
+      html+= '      <a onclick="product_carts('+render.id+')" class="product__button product__button--add-to-cart" data-toggle="modal" data-target="#alert-modal">'
       html+= '        <i class="fas fa-cart-plus"></i>'
       html+= '      </a>'
       html+= '      <a onclick="product_detail('+render.id+')" class="product__button product__button--detail" data-toggle="modal" data-target="#myModal">'
@@ -104,7 +104,7 @@
       html+= '        <h4 class="product__description">'+render.description+'</h4>'
       html+= '        <h3 class="product__price">$'+render.price+'</h3>'
       html+= '        <p class="paragraph">'+render.full_description+'</p>'
-      html+= '        <button class="btn btn--modifier btn-danger btn--big mt-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;ADD TO CART</button>'
+      html+= '        <button onclick="product_carts('+render.id+')" class="btn btn--modifier btn-danger btn--big mt-4"  data-toggle="modal" data-target="#alert-modal"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;ADD TO CART</button>'
       html+= '      </div>'
       html+= '    </div>'
 
@@ -176,19 +176,6 @@
   var get_amount =document.getElementById('amount-input');
   var minus =document.getElementById('minus-btn');
 
-  // function btn_plus(get_id_product){
-  //       count++;
-  //       get_amount.value = count;
-  //   }
-  //
-  // function btn_minus(){
-  //   if (get_amount.value > 1) {
-  //     count--;
-  //     get_amount.value = count;
-  //   }
-  //
-  // }
-
   $('.minus-btn').on('click', function(e) {
     e.preventDefault();
     var $this = $(this);
@@ -219,3 +206,8 @@ $('.plus-btn').on('click', function(e) {
 
     $input.val(value);
 });
+
+    // Set a timeout to hide the element again
+    setTimeout(function(){
+        $("alert-modal").hide();
+    }, 3000);

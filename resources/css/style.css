@@ -507,6 +507,25 @@ body{
   font-size: 3rem;
 }
 
+.product__item:hover{
+  box-shadow: 0 0 .2rem #264348;
+}
+
+.product__item:hover .product__button-box{
+  right: 0;
+}
+.product__item:hover .product__name{
+  color: #F22613;
+}
+
+.product__item:hover .product__image--second{
+  opacity: 1;
+}
+.product__button:hover{
+  background-color: #383838;
+  color: white;
+}
+
 /*------------------modal products css------------------*/
 .modal-content--products{
   display: flex;
@@ -518,7 +537,7 @@ body{
   border-radius: 2rem;
 }
 
-.modal-content--products .close, .modal-content--carts .close{
+.modal-content--products .close, .modal-content--carts .close, .modal-content--alert .close{
   position: absolute;
   z-index: 5;
   font-size: 3rem;
@@ -687,24 +706,26 @@ text-align: right;
 }
 
 /*----------------------------------------------*/
-.product__item:hover{
-  box-shadow: 0 0 .2rem #264348;
+
+/*-----------------modal alert----------------------------*/
+.modal-content--alert{
+  display: flex;
+  align-items: center;
+  width: 50rem;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem 0;
 }
 
-.product__item:hover .product__button-box{
-  right: 0;
-}
-.product__item:hover .product__name{
-  color: #F22613;
+.alert__image-box{
+  width: 20rem;
+  height: 20rem;
 }
 
-.product__item:hover .product__image--second{
-  opacity: 1;
+.alert__image{
+  width: 100%;
 }
-.product__button:hover{
-  background-color: #383838;
-  color: white;
-}
+/*--------------------------------------------------------*/
 /*------------divisions css----------------*/
 .divisions{
  margin-top: 10rem;
@@ -854,8 +875,9 @@ text-align: right;
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
+  height: 3rem;
   width: 3rem;
+  font-size: 2rem;
   border: 0;
   background-color: transparent;
   cursor: pointer;
@@ -906,22 +928,17 @@ text-align: right;
 
 ::-webkit-scrollbar-track {
       background-color: transparent;
-} /* the new scrollbar will have a flat appearance with the set background color */
-
+}
 ::-webkit-scrollbar-thumb {
       background-color: rgba(0,0,0,.3);
       border-radius: .5rem;
-} /* this will style the thumb, ignoring the track */
-
-
+}
 ::-webkit-scrollbar-button {
       background-color: transparent;
-} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
-
+}
 ::-webkit-scrollbar-corner {
       background-color: black;
-} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
-
+}
 .table td, .table th {
     border: none !important;
     vertical-align: middle !important;
@@ -944,12 +961,12 @@ text-align: right;
 
   .navbar--responsive{
     position: absolute;
-    padding-top: 5rem;
+    padding-top: 7rem;
     right: -110%;
     top: 0;
-    width: 80%;
+    width: 100%;
     height: 100vh;
-    background-color: #555;
+    background-image: radial-gradient( #394777, #202F4C);
     display: block;
     z-index: 2;
     transition: all .5s;
@@ -967,7 +984,9 @@ text-align: right;
   }
 
   .navbar__main .navbar__list{
-    margin: 2rem 0;
+    padding: 1.5rem 0;
+    width: 100%;
+    text-align: center;
   }
   .navbar__button{
     float: right;
@@ -980,11 +999,18 @@ text-align: right;
     float: right;
   }
 
-  .navbar__list{
-    padding: 0 1rem;
-    display: inline-block;
-  }
+.navbar__main .navbar__list:hover {
+  background-color: white;
+}
 
+.navbar__main .navbar__list:hover .navbar__link{
+  color: #394777;
+}
+
+.navbar__list:hover .navbar__link:before{
+  width: 0%;
+  left: 0;
+}
   /*-----------------------slider-------------------*/
   .hero-slider{
     top: 40%;
